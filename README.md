@@ -2,8 +2,10 @@
 
 Here, we have built a novel ensemble model, DeepCPBSite, combined with three separate models (Random undersampling, Weighted oversampling and Class-Weighted Loss) based on ResNet+FNN deep learning architecture. The framework for this architecture is given below:
 
-![DeepCPBSite_1](https://github.com/user-attachments/assets/592eb53d-0477-4008-86ff-fabf4a51d925)
-![DeepCPBSite_2](https://github.com/user-attachments/assets/5a4ae4b3-0c60-4349-b862-e5903cb0e73b)
+![DeepCPBSite-1](https://github.com/user-attachments/assets/2183d2f4-20ca-47b1-8615-4dc688dbe649)
+
+![DeepCPBSite_2-1](https://github.com/user-attachments/assets/0a299943-6754-4744-afe4-3f96e7a1179d)
+
 
 
 # Data availability
