@@ -41,7 +41,7 @@ transformers==4.44.2
 
 2. All reproducable codes are given. Training and prediction scripts are also provided.
 
-3. For reproducing results of each table inside the paper, you can navigate to the generation folder of that corresponding table number. Before running, update the feature_path variables inside the python files.
+3. For reproducing results of the tables, you can navigate to the generation folder of that corresponding table number. Before running, update the feature_path variables inside the python files.
 
 ### Prediction
 #### Prerequisites
