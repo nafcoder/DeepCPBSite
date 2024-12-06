@@ -1,6 +1,6 @@
 # Predicting Protein-Carbohydrate Binding Sites: A Deep Learning Approach Integrating Protein Language Model Embeddings and Structural Features
 
-Here, we have built a novel ensemble model, DeepCPBSite, combined with three separate models (Random undersampling, Weighted oversampling and Class-Weighted Loss) based on ResNet+FNN deep learning architecture. The framework for this architecture is given below:
+Here, we have built a novel ensemble model, DeepCPBSite, combined with three separate models using three separate approaches (Random undersampling, Weighted oversampling and Class-Weighted Loss) based on ResNet+FNN deep learning architecture. The framework for this architecture is given below:
 
 ![DeepCPBSite-1](https://github.com/user-attachments/assets/2183d2f4-20ca-47b1-8615-4dc688dbe649)
 
