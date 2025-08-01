@@ -8,9 +8,9 @@ import pickle
 import csv
 
 
-plt.rcParams.update({'font.size': 12})
+plt.rcParams.update({'font.size': 10})
 
-models =  ['DeepCPBSite', 'CAPSIF-G', 'CAPSIF-V', 'DeepGlycanSite']
+models =  ['DeepCPBSite', 'CAPSIF:G', 'CAPSIF:V', 'PS-G', 'PS-S', 'DeepGlycanSite']
 
 cmap = plt.get_cmap('tab10')
 colors = [cmap(i / (len(models) + 1)) for i in range(len(models))]
@@ -18,12 +18,13 @@ colors = [cmap(i / (len(models) + 1)) for i in range(len(models))]
 recall = []
 precision = []
 for model in models:
-    file = f'./precision_recall_curve/recall_{model}.csv'
+    gg = model.replace(':', '-')
+    file = f'./precision_recall_curve/recall_{gg}.csv'
     with open(file, 'r') as f:
         re = np.loadtxt(f, delimiter=',').tolist()
         recall.append(re)
     
-    file = f'./precision_recall_curve/precision_{model}.csv'
+    file = f'./precision_recall_curve/precision_{gg}.csv'
     with open(file, 'r') as f:
         pre = np.loadtxt(f, delimiter=',').tolist()
         precision.append(pre)
