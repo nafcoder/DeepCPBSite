@@ -2,14 +2,16 @@
 
 Here, we have built a novel ensemble model, DeepCPBSite, combined with three separate models using three separate approaches (Random undersampling, Weighted oversampling and Class-Weighted Loss) based on ResNet+FNN deep learning architecture. The framework for this architecture is given below:
 
-![DeepCPBSite-1](https://github.com/user-attachments/assets/2183d2f4-20ca-47b1-8615-4dc688dbe649)
+<img width="1284" height="2950" alt="DeepCPBSite-1" src="https://github.com/user-attachments/assets/ca75b5ef-7bd5-4f3c-838c-7de177ea5f80" />
 
-![DeepCPBSite_2-1](https://github.com/user-attachments/assets/0a299943-6754-4744-afe4-3f96e7a1179d)
+
+<img width="1415" height="1477" alt="DeepCPBSite_2-1" src="https://github.com/user-attachments/assets/7e498392-b44f-412a-b4ac-1581542df7cc" />
+
 
 
 
 # Data availability
-Training set, independent set, TS53 set and TS37 set are given in [Dataset](Dataset) folder.
+Training set, independent set, TS53 set, and TS37 set are given in [Dataset](Dataset) folder.
 
 # Environments
 OS: Pop!_OS 22.04 LTS
@@ -39,28 +41,28 @@ transformers==4.44.2
 ### Reproduction of results
 1. Firstly, download all features. Read the readme.txt of  [all_features](all_features) folder
 
-2. Reproducable codes are given. Training and prediction scripts are also provided.
+2. Reproducible codes are given. Training and prediction scripts are also provided.
 
-3. For reproducing results of the tables, you can navigate to the generation folder of that corresponding table number. Before running, update the feature_path variables inside the python files.
+3. For reproducing the results of the tables, you can navigate to the generation folder of that corresponding table number. Before running, update the feature_path variables inside the Python files.
 
 ### Prediction
 #### Prerequisites
-1. transformers and Pytorch are needed for extracting the embeddings.
+1. Transformers and PyTorch are needed for extracting the embeddings.
 
-2. For more query, you can visit the following githubs:
+2. For more queries, you can visit the following GitHubs:
 
     [ProtT5-XL-U50](https://github.com/agemagician/ProtTrans)
 
     [ESM2](https://github.com/facebookresearch/esm)
 
-3. You need to install dssp for generating the structural features from PDB
+3. You need to install DSSP for generating the structural features from PDB
 
 ```
 sudo apt-get install dssp
 ```
 
 #### Steps
-1. Firsly, you need to fillup [dataset.txt](prediction/dataset.txt). Follow the pattern shown below:
+1. Firstly, you need to fill up [dataset.txt](prediction/dataset.txt). Follow the pattern shown below:
 
 ```
 >Protein_id
@@ -72,4 +74,4 @@ Fasta
 3. For running [predict_with_struct.py](prediction/predict_with_struct.py), you need to input the PDB file for the query protein sequence. For generating ESMFold or AlphaFold PDB, you can visit: [ColabFold](https://github.com/sokrypton/ColabFold).
 
 ### Reproduce previous paper metrics
-In [Prev_Papers](table_15_generation/Prev_Papers) and [Prev_Papers_ESMFold](table_16_generation/Prev_Papers_ESMFold), scripts are provided for reproducing the results of previous papers. We have given the probabilities that were produced from their scripts for TS53 set.
+In [Prev_Papers](table_14_generation/Prev_Papers) and [Prev_Papers_ESMFold](table_15_generation/Prev_Papers_ESMFold), scripts are provided for reproducing the results of previous papers. We have given the probabilities that were produced from their scripts for the TS53 set.
